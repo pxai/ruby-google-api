@@ -2,7 +2,7 @@ require 'google/apis/drive_v2'
 
 Drive = Google::Apis::DriveV2 # Alias the module
 drive = Drive::DriveService.new
-drive.authorization = ... # See Googleauth or Signet libraries
+drive.authorization = "" # See Googleauth or Signet libraries
 
 # Search for files in Drive (first page only)
 files = drive.list_files(q: "title contains 'finances'")
